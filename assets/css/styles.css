@@ -115,6 +115,23 @@ a.dotted-link:hover {
   color: #49515a;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
