@@ -1,6 +1,6 @@
 /*!   
  * Template Name: Developer - Responsive Website Template for Developers
- * Version: 2.1
+ * Version: 2.2
  * Author: Xiaoying Riley
  * Twitter: @3rdwave_themes
  * License: Creative Commons Attribution 3.0 License
@@ -115,23 +115,6 @@ a.dotted-link:hover {
   color: #49515a;
 }
 
-.desktop {
-  display: block;
-}
-
-.mobile {
-  display: none;
-}
-
-@media(max-width: 768px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-}
-
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
@@ -159,7 +142,7 @@ a.dotted-link:hover {
   color: #778492;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 0;
   margin-bottom: 15px;
 }
