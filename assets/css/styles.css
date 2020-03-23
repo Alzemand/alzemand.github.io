@@ -15,6 +15,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.curso{
+  font-family: "Lato", arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #999;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
