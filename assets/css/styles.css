@@ -15,6 +15,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+@media(max-width: 768px) {
+  #perfil {
+    height: 100px;
+  }
+}
+
 .curso{
   font-family: "Lato", arial, sans-serif;
   font-size: 13px;
