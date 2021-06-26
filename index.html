@@ -1,566 +1,654 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR"> 
 <head>
     <title>Edilson Alzemand</title>
     <!-- Meta -->
+    <meta charset="utf-8">
     <meta property="og:title" content="Edilson Alzemand" />
     <meta property="og:description" content="Analista de Sistemas" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/images/intro.png" />
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Analista de Sistemas e Desenvolvedor de Software">
     <meta name="author" content="Edilson Alzemand">
     <link rel="shortcut icon" href="assets/images/favicon.png">
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
+    <script defer src="assets/plugins/fontawesome/js/all.js"></script>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-
-    
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
 </head> 
 
 <body>
-    <!-- ******HEADER****** --> 
+    
     <header class="header">
-        <div class="container clearfix">                       
-            <img id="perfil" class="profile-image img-fluid float-left" src="assets/images/pp.jpg" alt="Edilson Alzemand" />
-            <div class="profile-content float-left">
-                <h1 class="name">Edilson Alzemand S. Jr.</h1>
-                <h2 class="desc">Analista de Sistemas</h2>   
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://twitter.com/alzemand"><i class="fab fa-twitter"></i></a></li>                   
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/alzemand/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/Alzemand"><i class="fab fa-github-alt"></i></a></li>    
-                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/11487029/edilson-alzemand"><i class="fab fa-stack-overflow"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCNbDp8wVVH9h9tt7RiKi7Yw"><i class="fab fa-youtube"></i></a></li>                 
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="mailto:edilson_alzemand@id.uff.br" target="_blank"><i class="fas fa-envelope"></i> Contato</a>              
-        </div><!--//container-->
+        <div class="top-bar container-fluid">
+            <div class="actions">
+                <a class="btn d-none d-md-inline-block" href="mailto:edilson_alzemand@id.uff.br"><i class="fas fa-paper-plane" aria-hidden="true"></i> Contacte-me</a>
+                <a class="btn d-none d-md-inline-block" href="assets/doc/curriculo.pdf"><i class="fas fa-download" aria-hidden="true"></i> Download Currículo</a>
+            </div><!--//actions-->
+            <ul class="social list-inline">
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/alzemand/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://twitter.com/alzemand"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/Alzemand"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCNbDp8wVVH9h9tt7RiKi7Yw"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://t.me/Alzemand"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+            </ul><!--//social-->
+        </div><!--//top-bar-->
+        
+        <div class="intro">
+            <div class="container text-center">
+                <img class="profile-image" src="assets/images/profile-image.png" alt="">
+                <h1 class="name">Edilson Alzemand</h1>
+                <div class="title">Analista de Sistemas</div>
+                <div class="profile">
+                    <p>Carreira desenvolvida na área de Tecnologia da Informação, com ampla experiência no gerenciamento de projetos, implantação e manutenção de sistemas, gestão de equipes e implementação de melhorias, desenvolvendo trajetória em empresas nacionais e multinacionais de grande porte.</p>
+                </div><!--//profile-->
+            </div><!--//container-->
+        </div><!--//intro-->
+        
+        <!-- <div class="contact-info"> -->
+            <!-- <div class="container text-center"> -->
+                <!-- <ul class="list-inline"> -->
+                    <!-- <li class="email list-inline-item"><i class="fas fa-envelope mr-2"></i><a href="mailto:edilson_alzemand@id.uff.br">edilson_alzemand@id.uff.br</a></li> -->
+                    <!-- <li class="list-inline-item"><i class="fas fa-mobile-alt mr-2"></i><a href="#">0123 456 7890</a></li> -->
+                    <!-- <li class="website list-inline-item"><i class="fas fa-globe mr-2"></i><a href="#" target="_blank">portfoliosite.com</a></li> -->
+                <!-- </ul> -->
+            <!-- </div>   //container -->
+        <!-- </div>//contact-info -->
+        
+        <div id="page-nav-space-holder" class="page-nav-space-holder d-none d-md-block">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class="nav page-nav list-inline">
+                        <li class="nav-item"><a class="scrollto nav-link" href="#experiences-section">Experiências</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#education-section">Educação</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#skills-section">Skills</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#testimonials-section">Testemunho</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#portfolio-section">Portfólio</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#contact-section">Contato</a></li>
+                    </ul><!--//page-nav-->
+                </div>
+            </div><!--//page-nav-wrapper-->
+        </div>
+        
     </header><!--//header-->
     
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">Sobre mim</h2>
-                        <div class="content text-justify">
-                        <p>Carreira desenvolvida na área de Tecnologia da Informação, com ampla experiência no gerenciamento de projetos,
-                            implantação e manutenção de sistemas, gestão de equipes e implementação de melhorias,
-                            desenvolvendo trajetória em empresas nacionais e multinacionais de grande porte.</p>
-                        <p>Desenvolvedor Python automatizador de processos.</p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
+    <div class="wrapper container">
+        <section id="experiences-section" class="experiences-section section">
+            <h2 class="section-title">Experiências corporativas</h2>
+            <div class="timeline">
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Sapiensia Tecnologia</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>RJ</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Analista de Sistemas</div>
+                        <div class="time">2020 - Presente</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Mapeia os processos e funcionalidades de sistemas, adequando as necessidades do cliente durante o projeto. Identifica melhorias nos processos e direciona as regras de negócios do cliente. Elabora documentos, realiza levantamentos de atividades e dos acompanhamento dos prazos dos projetos junto a equipe.</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Mota Engil</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>RJ</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Analista de suporte de TI</div>
+                        <div class="time">2019 - 2020</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Projetar e prestar manutenção em redes de computadores; Responsável pela segurança; Criação de políticas de segurança; Prevenção contra invasões físicas e/ou lógicas; Instalar e manter a comunicação digital (correio eletrônico, WEB, FTP, VPN, etc.); Configurar as contas de correio eletrônico (E-mail); Suporte aos usuários da empresa ou organização.</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Consórcio Integrar Offshore </h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>RJ</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Assistente de suporte de TI</div>
+                        <div class="time">2019 - 2020</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Preparar inventário do hardware existente, contratos de manutenção e prazos de garantia, treinar os usuários nos aplicativos disponíveis, dando suporte na solução de problemas, efetuar a manutenção e conservação dos equipamentos, efetuar os backups e outros procedimentos de segurança dos dados armazenados, criar e implantar procedimentos de restrição do acesso e utilização da rede.</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">ESANE - Empresa Pública Municipal de Saneamento</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>RJ</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Técnico em redes de computadores</div>
+                        <div class="time">2015 - 2016</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Monitoria de redes, sites e internet, acompanha as suspeitas de fraude, tratar chamados gerados pelos usuários, direciona chamados para a solução e monitora sistemas internos dos clientes. Ativa e configura roteadores e switches e infraestrutura associada.</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+            </div><!--//timeline-->
+            
+        </section><!--//section-->
+        
+        <section id="education-section" class="education-section section">
+            <h2 class="section-title">Educação</h2>
+            <div class="row">
+                <div class="item col-12 col-md-12">
+                    <div class="item-inner">
+                        <h3 class="degree">Mestrado em Engenharia de Produção e Sistemas Computacionais</h3>
+                        <div class="education-body">
+                            Universidade Federal Fluminense 
+                        </div><!--//education-body-->
+                        <div class="time">2020 - 2022</div>
+                        <!-- <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                        </div> -->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-12 col-md-12">
+                    <div class="item-inner">
+                        <h3 class="degree">Bacharelado em Sistemas de Informação</h3>
+                        <div class="education-body">
+                            Faculdade Municipal de Macaé Professor Miguel Ângelo da Silva Santos
+                        </div><!--//education-body-->
+                        <div class="time">2014 - 2018</div>
+                        <!-- <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                        </div> -->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <hr class='divider'><br>
+                <h2 class="section-title">Cursos</h2>
+
+                <div class="row">
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h4 class="degreec">SQL Server: Introdução ao SQL com Microsoft SQL Server 2017</h4>
+                            <div class="education-body">
+                                Alura
+                            </div><!--//education-body-->
+                            <div class="time">Abr. 2021</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Technical Support Fundamentals</h3>
+                            <div class="education-body">
+                                Google
+                            </div><!--//education-body-->
+                            <div class="time">Ago. 2020</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h4 class="degreec">Scrum Foundation Professional Certificate (SFPC)</h4>
+                            <div class="education-body">
+                                CertiProf
+                            </div><!--//education-body-->
+                            <div class="time">Jun. 2020</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Curso Redes Completo - CCNA R&S</h3>
+                            <div class="education-body">
+                                EADCCNA
+                            </div><!--//education-body-->
+                            <div class="time">Set. 2019</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Sistemas Operacionais</h3>
+                            <div class="education-body">
+                                Brasil Mais TI
+                            </div><!--//education-body-->
+                            <div class="time">Dez. 2018</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Modelagem de dados</h3>
+                            <div class="education-body">
+                                Fundação Bradesco
+                            </div><!--//education-body-->
+                            <div class="time">Ago. 2018</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Introdução a Redes de Computadores</h3>
+                            <div class="education-body">
+                                Fundação Bradesco
+                            </div><!--//education-body-->
+                            <div class="time">Fev. 2018</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Instrutor Núcleo de Desenvolvimento de Sistemas</h3>
+                            <div class="education-body">
+                                FeMASS
+                            </div><!--//education-body-->
+                            <div class="time">Fev. 2018</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Conceitos Basicos de Desenvolvimento de Software</h3>
+                            <div class="education-body">
+                                Microsoft
+                            </div><!--//education-body-->
+                            <div class="time">Jul. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Fundamentos de Rede</h3>
+                            <div class="education-body">
+                                Microsoft
+                            </div><!--//education-body-->
+                            <div class="time">Jul. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Engenharia Social / Desenvolvimento Orientado a Testes</h3>
+                            <div class="education-body">
+                                FeMASS
+                            </div><!--//education-body-->
+                            <div class="time">Jun. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Certificate of Completion: PHP Course</h3>
+                            <div class="education-body">
+                                SoloLearn
+                            </div><!--//education-body-->
+                            <div class="time">Abr. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Fundamentos da linguagem C#</h3>
+                            <div class="education-body">
+                                Microsoft
+                            </div><!--//education-body-->
+                            <div class="time">Abr. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Certificate of Completion: PHP Course</h3>
+                            <div class="education-body">
+                                SoloLearn
+                            </div><!--//education-body-->
+                            <div class="time">Abr. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Certificate of Completion: SQL Fundamentals</h3>
+                            <div class="education-body">
+                                SoloLearn
+                            </div><!--//education-body-->
+                            <div class="time">Abr. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Certificate of Completion: C Course</h3>
+                            <div class="education-body">
+                                SoloLearn
+                            </div><!--//education-body-->
+                            <div class="time">Fev. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Certificate of Completion: Python Course</h3>
+                            <div class="education-body">
+                                SoloLearn
+                            </div><!--//education-body-->
+                            <div class="time">Fev. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Ética Digital para profissionais de TI / Robótica</h3>
+                            <div class="education-body">
+                                FeMASS
+                            </div><!--//education-body-->
+                            <div class="time">Jan. 2016</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Montagem e Manuntenção de Notebook</h3>
+                            <div class="education-body">
+                                Fábrica da Cidadania, Prefeitura de Macaé
+                            </div><!--//education-body-->
+                            <div class="time">Jun. 2012</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <h3 class="degreec">Montagem e Manuntenção de Computadores</h3>
+                            <div class="education-body">
+                                Fábrica da Cidadania, Prefeitura de Macaé
+                            </div><!--//education-body-->
+                            <div class="time">Mai. 2012</div>
+                            <!-- <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div> -->
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+
+
+            </div><!--//row-->
+        </section><!--//section-->
+        
+        
+        <section id="skills-section" class="skills-section section text-center">
+            <h2 class="section-title">Professional Skills</h2>
+            <div class="top-skills">
+                <h3 class="subtitle">Melhores Skills</h3>
+                <div class="row">
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <!-- <div class="chart-easy-pie text-center">
+                                <div class="chart-theme-1 chart" data-percent="98"><span>98</span>%</div>
+                            </div> -->
+                            <h4 class="skill-name">Python, Web2Py &amp; Django</h4>
+                            <div class="level">Avançado</div>
+                            <div class="desc">
+                                Atuei como instrutor de Python em um curso de férias disponibilizado pela FeMASS, ensinando do básico ao avançado. 
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <!-- <div class="chart-easy-pie text-center">
+                                <div class="chart-theme-1 chart" data-percent="90"><span>90</span>%</div>
+                            </div> -->
+                            <h4 class="skill-name">SQL</h4>
+                            <div class="level">Avançado</div>
+                            <div class="desc">
+                                Atuei desenvolvendo relatórios customizados para clientes, com base em suas regras de negócio.   
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <!-- <div class="chart-easy-pie text-center">
+                                <div class="chart-theme-1 chart" data-percent="85"><span>85</span>%</div>
+                            </div> -->
+                            <h4 class="skill-name">GIT</h4>
+                            <div class="level">Intermediário</div>
+                            <div class="desc">
+                                Controlei versões dos meus códigos utilizando GIT, utilizei meus conhecimentos onde trabalhei, usando ferramentas como GITHUB e BITBUCKET 
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                </div><!--//row-->
+            </div><!--//top-skills-->
+            
+            <div class="other-skills">
+                <h3 class="subtitle">Outras Skills</h3>
+                <div class="misc-skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Windows Server</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Redes de Computadores</span>
+                    <span class="skill-tag">Hardware</span>
+                    <span class="skill-tag">Shell</span>
+                    <span class="skill-tag">Helpdesk</span>
+                </div>
+            </div><!--//other-skills-->
+            
+        </section><!--//skills-section-->
+        
+        <section id="testimonials-section" class="testimonials-section section">
+            <h2 class="section-title">Testemunho</h2>
+            
+            <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-bs-interval="8000">
+                
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#testimonials-carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#testimonials-carousel" data-bs-slide-to="2"></li>
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <blockquote class="quote">      
+                            <p><span class="icon-holder"><i class="fas fa-quote-left"></i></span>                            
+                                Profissional extremamente atencioso, dinâmico, focado, sempre disposto a trocar informações, buscando solucionar os problemas e com muita capacidade de estabelecer relações interpessoais sólidas e equilibradas.</p>
+                        </blockquote>    
+                        <div class="source">
+                            <div class="name">André Viana</div>
+                            <div class="position">Sócio proprietário, Union Engenharia</div>
+                        </div><!--//source-->   
+                                                       
+                    </div><!--//item-->
+                    <div class="item carousel-item">
+                        <blockquote class="quote">
+                            <p><span class="icon-holder"><i class="fas fa-quote-left"></i></span> 
+                                Excelente profissional, dedicado e comprometido.</p>
+                            
+                        </blockquote>
+                        <div class="source">
+                            <div class="name">Henrique Melo</div>
+                            <div class="position">Engenheiro, Mota Engil</div>
+                        </div><!--//source-->   
+               
+                    </div><!--//item-->
+                    <div class="item carousel-item">
+                        <blockquote class="quote">
+                            <p><span class="icon-holder"><i class="fas fa-quote-left"></i></span> 
+                            Um dos melhores TI's que trabalhei</p>
+                        </blockquote>       
+                        <div class="source">
+                            <div class="name">Francisco Caetano</div>
+                            <div class="position">Coordenador de Planejamento</div>
+                        </div><!--//source-->          
+                    </div><!--//item-->
+                    
+                </div><!--//carousel-inner-->
+            </div><!--//testimonials-carousel-->
+            
+        </section><!--//section-->
+        
+        
+        <section id="portfolio-section" class="portfolio-section section">
+            <h2 class="section-title">Portfólio</h2>
+            <!-- <ul id="filters" class="filters clearfix">
+                <li class="type active" data-filter="*">Tudo</li>
+                <li class="type" data-filter=".backend">Back-end</li>
+                <li class="type" data-filter=".frontend">Front-end</li>
+            </ul>//filters -->
+            <div class="items-wrapper isotope row">
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-1.png" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="https://youtu.be/t9p4pJxZ1A0" target="_blank">Machine Learning</a></h3>
+                            <div class="meta">Python </div>
+                            <div class="action"><a href="https://youtu.be/t9p4pJxZ1A0" target="_blank">Ver no YouTube &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="https://youtu.be/t9p4pJxZ1A0" target="_blank"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-2.png" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="https://github.com/Sigedo " target="_blank">Sigedo - Sistema de estágio</a></h3>
+                            <div class="meta">Web2Py</div>
+                            <div class="action"><a href="https://github.com/Sigedo" target="_blank">Ver no Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="https://github.com/Sigedo" target="_blank"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item backend frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-3.png" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="https://github.com/Alzemand/Chatterbot-mestrado" target="_blank">Chatterbot</a></h3>
+                            <div class="meta">Python</div>
+                            <div class="action"><a href="https://github.com/Alzemand/Chatterbot-mestrado" target="_blank">ver no Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="https://github.com/Alzemand/Chatterbot-mestrado" target="_blank"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-4.png" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="https://github.com/Alzemand/SistemaGerar" target="_blank">Certificado Check</a></h3>
+                            <div class="meta">PHP, Bootstrap</div>
+                            <div class="action"><a href="https://github.com/Alzemand/SistemaGerar" target="_blank">Ver no Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="https://github.com/Alzemand/SistemaGerar" target="_blank"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+            </div><!--//item-wrapper-->
+            
+        </section><!--//section-->
+        
+        <section id="contact-section" class="contact-section section">
+            <h2 class="section-title">Contato</h2>
+            <div class="intro">
+                
+                <a class="btn d-block d-sm-none" href="#"><i class="fas fa-download" aria-hidden="true"></i> Download Currículo</a>
+                <br>
+                <div class="dialog">
+                    
+                    <p>Carreira desenvolvida na área de Tecnologia da Informação, com ampla experiência no gerenciamento de projetos, implantação e manutenção de sistemas, redes de computadores, gestão de equipes e implementação de melhorias, desenvolvendo trajetória em empresas nacionais e multinacionais de grande porte.</p>
+                    <p><strong>Eu posso ajudar com:</strong></p>
+                    <ul class="list-unstyled service-list ml-0">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Desenvolvimento de sistemas WEB</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Levantamento de requisitos </li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Backend com Python/Django e Web2Py</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Redes, Servidores e Infraestrutura </li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Manutenção de Hardware</li>
+                    </ul>
+                    <p>Contacte-me <a href="mailto:edilson_alzemand@id.uff.br">edilson_alzemand@id.uff.br</a></p>
+                    <ul class="social list-inline">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/alzemand/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://twitter.com/alzemand"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/Alzemand"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCNbDp8wVVH9h9tt7RiKi7Yw"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="https://t.me/Alzemand"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    </ul><!--//social-->
+                </div><!--//diaplog-->
+            </div><!--//intro-->
+
+        </section><!--//section-->
+        
+    </div><!--//wrapper-->
     
-                <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Últimos projetos</h2>
-                        <div class="content">
-                
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="https://github.com/Alzemand/ubi-virtual-assistant"
-                                        target="_blank">Machine Learning</a></h3>
-                                <p class="summary">Como criar um bot em Python capaz de falar e escutar usando <i>Machine Learning</i></p>
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t9p4pJxZ1A0" allowfullscreen></iframe>
-                                      </div>
-                            </div>
-                
-                            <!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/work-1.jpg" data-lightbox="image-1"
-                                    data-title="Projeto Gerar">
-                                    <img class="img-fluid project-image" src="assets/images/projects/work-1.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Projeto Gerar</h3>
-                                    <p class="mb-2">Site para divulgação de cursos e treinamentos. O site possui um
-                                        validador de certificado online que impede falsificação. Tecnologias: HTML5,
-                                        CSS3, Bootstrap, JS, PHP e MySQL.</p>
-                                    <p><a class="more-link" href="https://projetogerar.munozconsultoria.com.br/" target="_blank"><i
-                                                class="fas fa-external-link-alt"></i>Acesse a página</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                
-                            <!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/work-2.jpg" data-lightbox="image-1"
-                                    data-title="Muñoz Consultoria">
-                                    <img class="img-fluid project-image" src="assets/images/projects/work-2.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Muñoz Consultoria</h3>
-                                    <p class="mb-2">Site para oferecer serviços de consultoria e suporte a certificações
-                                        das empresas de acordo com as NR.</p>
-                                    <p><a class="more-link" href="https://munozconsultoria.com.br/" target="_blank"><i
-                                                class="fas fa-external-link-alt"></i>Acesse a página</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                
-                            <!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="assets/images/projects/work-3.jpg" data-lightbox="image-1"
-                                    data-title="Toti trader">
-                                    <img class="img-fluid project-image" src="assets/images/projects/work-3.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Toti Trader</h3>
-                                    <p class="mb-2">Grupo global de investidores associados com extensa experiência na
-                                        área de forex, criptotrading e trading e sportivo.</p>
-                                    <p><a class="more-link" href="https://totitrader.com/" target="_blank"><i
-                                                class="fas fa-external-link-alt"></i>Acesse a página</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                
-                            <!--//item-->
-                
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-                
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Outros Projetos</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/Sigedo" target="_blank">SIGEDO -
-                                        Sistema de gerenciamento de estágio para a FeMASS</a>
-                                    <span class="badge badge-theme">Open Source</span></h3>
-                                <p class="summary">Especificar e implementar funcionalidades em um sistema de informação
-                                    que apoie atividades críticas na gestão de estágio na FeMASS;</p>
-                                <p><a class="more-link" href="https://github.com/Alzemand/sigedo" target="_blank"><i
-                                            class="fas fa-external-link-alt"></i> Acesse o projeto</a></p>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/Alzemand/mojave-wallpaper-kde" target="_blank">Mojave
-                                        Dynamic Wallpaper for KDE Plasma Linux</a>
-                                    <span class="badge badge-theme">Open Source</span></h3>
-                                <p class="summary">O novo MAC OS possui o recurso de papel de parede dinâmico muito
-                                    bonito, porém exclusivo para o sistema operacional. Era exclusivo até agora, com
-                                    esse script em Python que eu fiz.</p>
-                                <p><a class="more-link" href="https://github.com/Alzemand/mojave-wallpaper-kde" target="_blank"><i
-                                            class="fas fa-external-link-alt"></i> Acesse o projeto</a>
-                                </p>
-                            </div>
-                            <!--//item-->
-                
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/Alzemand/ubi-virtual-assistant" target="_blank">Ubi
-                                        Virtual Assistant</a>
-                                    <span class="badge badge-theme">Open Source</span></h3>
-                                <p class="summary">Interface de comandos amigaveis para o terminal linux
-                                    (Python).</p>
-                                <p><a class="more-link" href="https://github.com/Alzemand/ubi-virtual-assistant" target="_blank"><i
-                                            class="fas fa-external-link-alt"></i> Acesse o projeto</a>
-                                </p>
-                            </div>
-                            <!--//item-->
-                
-                            <a class="btn btn-cta-secondary" href="https://github.com/Alzemand?tab=repositories">Mais
-                                projetos <i class="fas fa-chevron-right"></i></a>
-                
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-
-                <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">Meu GitHub</h2>
-                        <p>Contribuições no ultimo ano no Github.</p> 
-                        
-
-                        <div id="github-graph" class="github-graph">
-
-                        </div><!--//github-graph-->
-
-                        
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
-                
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Experiências corporativas </h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Consultor de Sistemas - <span class="place"><a href="https://www.sapiensia.com/"></a>
-                                            Sapiensia Tecnologia</a></span> <span class="year">(2020 - Presente)</span></h3>
-                                <p class="text-justify">Mapeia os processos e funcionalidades de sistemas, adequando as necessidades do cliente durante o projeto. Identifica melhorias nos processos e direciona as regras de negócios do cliente. Elabora documentos, realiza levantamentos de atividades e dos acompanhamento dos prazos dos projetos junto a equipe.</p>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title">Analista de suporte de TI - <span class="place"><a href="http://www.mota-engil.com/"></a>
-                                            Mota
-                                            Engil</a></span> <span class="year">(2019 - 2020)</span></h3>
-                                <p class="text-justify">Projetar e prestar manutenção em redes de computadores;
-                                    Responsável pela segurança; Criação de políticas de segurança;
-                                    Prevenção contra invasões físicas e/ou lógicas; Instalar e manter a comunicação
-                                    digital (correio eletrônico, WEB, FTP, VPN, etc.); Configurar as contas de
-                                    correio eletrônico (E-mail); Suporte aos usuários da empresa ou organização.</p>
-                            </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title">Assistente de suporte de TI - <span class="place"><a
-                                            href="http://integrarcm.com.br/">Consórcio Integrar Offshore</a></span>
-                                    <span class="year">(2016 - 2018)</span></h3>
-                                <p class="text-justify">Preparar inventário do hardware existente,
-                                    contratos de manutenção e prazos de garantia, treinar os usuários nos aplicativos
-                                    disponíveis, dando suporte na solução de problemas, efetuar a manutenção e
-                                    conservação dos equipamentos, efetuar os backups e outros procedimentos de
-                                    segurança dos dados armazenados, criar e implantar procedimentos de restrição do
-                                    acesso e utilização da rede.</p>
-                            </div>
-                            <!--//item-->
-                
-                            <div class="item">
-                                <h3 class="title">Técnico em redes de computadores - <span class="place"><a
-                                            href="http://www.macae.rj.gov.br/esane">ESANE - Empresa Pública Municipal de
-                                            Saneamento</a></span>
-                                    <span class="year">(2015 - 2016)</span></h3>
-                                <p class="text-justify">Monitoria de redes, sites e internet, acompanha as suspeitas de fraude, tratar
-                                    chamados gerados pelos usuários, direciona chamados para a solução e monitora
-                                    sistemas internos dos clientes. Ativa e configura roteadores e switches e
-                                    infraestrutura associada.</p>
-                            </div>
-                            <!--//item-->
-                
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading sr-only">Informações de contato</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Rio de Janeiro, BR</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                                        href="#">edilson_alzemand@id.uff.br</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a
-                                        href="#">https://www.alzemand.com</a></li>
-                            </ul>
-                        </div>
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Habilidades</h2>
-                        <div class="content">
-                            <p class="intro">
-                                Aqui estão minhas habilidades técnicas utilizadas nos meus projetos</p>
-
-                            <div class="skillset">
-
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Web2py<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="Pelo menos parece ser..."><i
-                                                class="fas fa-info-circle"></i>Avançado</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%" style="width: 80%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">C &amp; C++<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="Pelo menos parece ser..."><i
-                                                class="fas fa-info-circle"></i>Intermediário</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%" style="width: 50%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">PHP<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title=""><i
-                                                class="fas fa-info-circle"></i>Intermediário</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="55%" style="width: 55%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3 &amp; JS<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title=""><i
-                                                class="fas fa-info-circle"></i>Avançado</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="75%" style="width: 75%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">GIT<span class="level-label" data-toggle="tooltip"
-                                            data-placement="left" data-animation="true"
-                                            title=""><i
-                                                class="fas fa-info-circle"></i>Profissional</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="65%" style="width: 65%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">SQL<span class="level-label" data-toggle="tooltip" data-placement="left"
-                                            data-animation="true" title=""><i class="fas fa-info-circle"></i>Avançado</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%" style="width: 85%">
-                                        </div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-
-                                <p><a class="more-link" href="https://sourcerer.io/alzemand"><i class="fas fa-external-link-alt"></i>Mais detalhes</a></p>
-                            </div>
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Educação</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Mestrado em Engenharia de Produção e Sistemas Computacionais</h3>
-                                <h4 class="university">Universidade Federal Fluminense <span class="year">(2020-2022)</span>
-                                </h4>
-                            </div>
-
-                            <div class="item">
-                                <h3 class="title">Bacharelado em Sistemas de Informação</h3>
-                                <h4 class="university">Faculdade Municipal de Macaé Professor Miguel Ângelo da Silva Santos <span class="year">(2014-2018)</span>
-                                </h4>
-                            </div>
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Linguagens</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>Português:</strong></span>
-                                    <span class="level">Nativo<br class="visible-xs" /><i
-                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                            class="fas fa-star"></i> </span>
-                                </li>
-                                <!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Profissional <br class="visible-sm visible-xs" />
-                                        <i class="fas fa-star"></i> 
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>      
-                                        <i class="fas fa-star-half"></i>
-                                        </span>
-                                </li>
-                                <!--//item-->
-                            </ul>
-                        </div>
-                        <!--//content-->
-                    </div>
-                </aside>
-                
-                <aside class="list conferences aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Cursos</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-graduation-cap"></i> Technical Support Fundamentals
-                                <h4 class="curso">Google <span class="year">(2020)</span></li>
-                                    
-                                <li><i class="fas fa-graduation-cap"></i> Scrum Foundation Professional Certificate (SFPC)
-                                <h4 class="curso">CertiProf <span class="year">(2020)</span></li>
-                                                                    
-                                <li><i class="fas fa-graduation-cap"></i> Curso Redes Completo - CCNA R&S
-                                <h4 class="curso">EADCCNA <span class="year">(2019)</span></li>
-                                
-                                <li><i class="fas fa-graduation-cap"></i> Sistemas Operacionais
-                                <h4 class="curso">Brasil Mais TI <span class="year">(2018)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> Modelagem de dados
-                                <h4 class="curso">Fundação Bradesco <span class="year">(2018)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> Introdução a Redes de Computadores
-                                <h4 class="curso">Fundação Bradesco <span class="year">(2018)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> Conceitos Basicos de Desenvolvimento de Software
-                                <h4 class="curso">Microsoft <span class="year">(2016)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> Fundamentos de Rede
-                                <h4 class="curso">Microsoft <span class="year">(2018)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> Fundamentos da linguagem C#
-                                <h4 class="curso">Microsoft <span class="year">(2016)</span></li>
-                                            
-                                <li><i class="fas fa-graduation-cap"></i> PHP Course
-                                <h4 class="curso">SoloLearn <span class="year">(2016)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> HTML Fundamentals
-                                <h4 class="curso">SoloLearn <span class="year">(2016)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> SQL Fundamentals
-                                <h4 class="curso">SoloLearn <span class="year">(2016)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> C Course
-                                <h4 class="curso">SoloLearn <span class="year">(2016)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> Python Course
-                                <h4 class="curso">SoloLearn <span class="year">(2016)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> Montagem e Manutenção de Notebook
-                                <h4 class="curso">Fabrica da Cidadania <span class="year">(2012)</span></li>
-
-                                <li><i class="fas fa-graduation-cap"></i> Montagem e Manutenção de Computadores
-                                <h4 class="curso">Fabrica da Cidadania <span class="year">(2012)</span></li>
-                                    
-
-                                    
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-
-                <aside class="testimonials aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Indicações</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">
-                                    <p><i class="fas fa-quote-left"></i>Profissional extremamente atencioso, dinâmico, focado, sempre disposto a trocar informações, buscando solucionar os problemas e com muita capacidade de estabelecer relações interpessoais sólidas e equilibradas.</p>
-                                </blockquote>
-                                <p class="source"><span class="name">André Viana</span><br /><span class="title">Coordenador de SMS</span></p>
-                            </div>
-                            <!--//item-->
-
-                            <div class="item">
-                                <blockquote class="quote">
-                                    <p><i class="fas fa-quote-left"></i>Excelente profissional, dedicado e comprometido.</p>
-                                </blockquote>
-                                <p class="source"><span class="name">Henrique Rabello</span><br /><span class="title">Coordenador de Engenharia</span></p>
-                            </div>
-                            <!--//item-->
-
-                            <p><a class="more-link" href="https://www.linkedin.com/in/alzemand/"><i class="fas fa-external-link-alt"></i>Mais no
-                                    Linkedin</a></p>
-
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
-                <!--//section-->
-                
-                <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Filosofia do Software Livre</h2>
-                        <div class="content">
-                            <ul class="list-unstyled pb-2">
-                                <li><a href="https://www.python.org/dev/peps/pep-0020/" target="_blank"><i
-                                            class="fas fa-external-link-alt"></i>Zen of Python</a></li>
-                                <li><a href="https://www.gnu.org/philosophy/philosophy.html" target="_blank"><i
-                                            class="fas fa-external-link-alt"></i>Projeto GNU</a></li>
-                            </ul>
-
-                            <hr />
-
-                            <p class="pt-2 text-center">Baixe meu currículo em PDF</p>
-                            <div class="col text-center">
-                            <a class="btn btn-cta-primary btn-download"
-                                href="assets/doc/curriculo.pdf"
-                                target="_blank"><i class="fas fa-download"></i> Download Currículo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </aside>
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">O designer dessa página foi feito por <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> para todos os desenvolvedores</small>
+    <footer class="footer text-center">
+        <div class="container">
+            <small class="copyright">Template Copyright @ <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
         </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->         
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script>
-        GitHubCalendar(".github-graph", "alzemand");
-    </script>
-              
+    </footer>
+    
+    
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <script src="assets/plugins/easy-pie-chart/dist/easypiechart.min.js"></script>
+    <script src="assets/plugins/imagesloaded.pkgd.min.js"></script> 
+    <script src="assets/plugins/isotope.pkgd.min.js"></script>  
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="assets/plugins/vanilla-back-to-top.min.js"></script> 
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/main.js"></script>
+    
+
 </body>
 </html> 
 

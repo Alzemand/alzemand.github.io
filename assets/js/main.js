@@ -1,69 +1,173 @@
-$(window).on('load', function() {
+"use strict";
 
-    $('.level-bar-inner').each(function() {
+/* ======= Fixed page nav when scrolled ======= */    
+const pageNavHolder = document.getElementById('page-nav-space-holder');
+const pageNavWrapper = document.getElementById('page-nav-wrapper');
+
+window.onload = function() 
+{   
+    navAnimation(); 
+};
+
+window.onresize = function() 
+{   
+    navAnimation(); 
+};
+
+
+window.onscroll = function() 
+{   
+    navAnimation(); 
+};
+
+
+function navAnimation () {
+	
+	pageNavWrapper.classList.remove('fixed');
+	
+	var topDistance;
+	// Check fixednav contains any element before get the topDistance
+	if (pageNavWrapper.childNodes) {
+		
+		//console.log('has child');	
+		var topDistance = window.pageYOffset + pageNavWrapper.getBoundingClientRect().top;	
+		//console.log(topDistance);
+		
+	}
+	
+	let scrollTop = window.pageYOffset;
+	
+	//console.log(scrollTop);
     
-        var itemWidth = $(this).data('level');
-        
-        $(this).animate({
-            width: itemWidth
-        }, 800);
-        
+	
+	if ( (topDistance) > scrollTop ) {
+	    pageNavWrapper.classList.remove('fixed');
+	    document.body.classList.remove('sticky-page-nav');
+	    
+	    //console.log('not sticky');
+	    
+	    
+	}
+	
+	
+	if ( (topDistance) < scrollTop ) {
+	    pageNavWrapper.classList.add('fixed');
+	    document.body.classList.add('sticky-page-nav');
+	    
+	    //console.log('sticky');
+	}
+};
+
+
+
+/* ===== Smooth scrolling ====== */
+/*  Note: You need to include smoothscroll.min.js (smooth scroll behavior polyfill) on the page to cover some browsers */
+/* Ref: https://github.com/iamdustan/smoothscroll */
+
+
+let scrollLinks = document.querySelectorAll('.scrollto');
+
+
+scrollLinks.forEach((scrollLink) => {
+
+	scrollLink.addEventListener('click', (e) => {
+		
+		e.preventDefault();
+
+		let element = document.querySelector(scrollLink.getAttribute("href"));
+		
+		const yOffset = pageNavWrapper.getBoundingClientRect().height; //page nav bar div height
+		
+		//console.log(yOffset);
+		
+		const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+		
+		window.scrollTo({top: y, behavior: 'smooth'});
+		
+		
+		//Collapse mobile menu after clicking
+		if (pageNavWrapper.classList.contains('show')){
+			pageNavWrapper.classList.remove('show');
+		}
+
+		
     });
-
+	
 });
 
 
-jQuery(document).ready(function($) {
+/* ===== Gumshoe SrollSpy ===== */
+/* Ref: https://github.com/cferdinandi/gumshoe  */
 
-
-    /*======= Skillset *=======*/
-    
-    $('.level-bar-inner').css('width', '0');
-    
-    
-    
-    /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
-    
-    
-    /* jQuery RSS - https://github.com/sdepold/jquery-rss */
-    
-    $("#rss-feeds").rss(
-    
-        //Change this to your own rss feeds
-        "https://feeds.feedburner.com/TechCrunch/startups",
-        
-        {
-        // how many entries do you want?
-        // default: 4
-        // valid values: any integer
-        limit: 3,
-        
-        // the effect, which is used to let the entries appear
-        // default: 'show'
-        // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
-        effect: 'slideFastSynced',
-        
-        // will request the API via https
-	    // default: false
-	    // valid values: false, true
-	    ssl: true,
-        
-        // outer template for the html transformation
-        // default: "<ul>{entries}</ul>"
-        // valid values: any string
-        layoutTemplate: "<div class='items'>{entries}</div>",
-        
-        // inner template for each entry
-        // default: '<li><a href="{url}">[{author}@{date}] {title}</a><br/>{shortBodyPlain}</li>'
-        // valid values: any string
-        entryTemplate: '<div class="item"><h3 class="title"><a href="{url}" target="_blank">{title}</a></h3><div><p>{shortBodyPlain}</p><a class="more-link" href="{url}" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a></div></div>'
-        
-        }
-    );
-    
-    /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    new GitHubCalendar("#github-graph", "alzemand");
-    
-
+// Initialize Gumshoe
+var spy = new Gumshoe('#page-nav a', {
+	offset: function () {
+		return pageNavWrapper.getBoundingClientRect().height;
+	}
 });
+
+
+
+/* ======= Pie Chart ========= */
+/* Ref: https://github.com/rendro/easy-pie-chart */
+
+
+var chartElements = document.querySelectorAll('.chart');
+
+chartElements.forEach((chartElement) => {
+	
+    new EasyPieChart(chartElement, {
+        barColor:'#00BCD4',//Pie chart colour
+		trackColor: '#e8e8e8',
+		scaleColor: false,
+		lineWidth : 5,
+		animate: 1000,
+    });
+    
+});
+
+
+/* ======= Isotope plugin ======= */
+/* Ref: http://isotope.metafizzy.co/ */
+// init Isotope 
+
+const isotopeContainer = document.querySelector('.isotope');
+const filterItems = document.querySelectorAll('#filters .type');
+
+imagesLoaded(isotopeContainer, function () {
+	
+	var iso = new Isotope( isotopeContainer, {
+	  // options
+	  itemSelector: '.item',
+	  layoutMode: 'fitRows'
+	  
+	});
+	
+	// filter items on click
+	filterItems.forEach((filterItem) => {
+	
+		filterItem.addEventListener('click', (e) => {
+			
+			console.log('clicked');
+			
+			let filterValue = filterItem.getAttribute('data-filter');
+			
+			// arrange - https://isotope.metafizzy.co/methods.html
+			iso.arrange({ filter: filterValue });
+			
+			
+			//toggle active class
+			for (let siblingFilterItem of filterItem.parentNode.children) {
+		        siblingFilterItem.classList.remove('active');
+		    }
+			filterItem.classList.add('active');
+
+		});
+
+	});
+});
+
+
+
+
+
