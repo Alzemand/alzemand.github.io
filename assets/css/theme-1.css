@@ -28,7 +28,7 @@ h6 {
 }
 
 a {
-    color: #00BCD4;
+    color: #4CAF50;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
@@ -38,7 +38,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #007888
+    color: #357a38
 }
 
 a:focus {
@@ -51,7 +51,7 @@ p {
 
 .btn,
 a.btn {
-    background: #008fa1;
+    background: #3d8b40;
     color: #fff;
     padding: 8px 15px;
     border-radius: 2px;
@@ -68,7 +68,7 @@ a.btn {
 .btn:hover,
 a.btn:hover {
     color: #fff;
-    background: #00a5bb;
+    background: #449d48;
     text-decoration: none
 }
 
@@ -82,7 +82,7 @@ a.btn:focus {
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
-    background: #008fa1;
+    background: #3d8b40;
     color: #fff;
     text-align: center;
     display: inline-block;
@@ -97,7 +97,7 @@ a.btn:focus {
 }
 
 #back-to-top:hover {
-    background: #007888;
+    background: #357a38;
     color: #fff
 }
 
@@ -107,7 +107,7 @@ a.btn:focus {
 }
 
 .header {
-    background: #00BCD4;
+    background: #4CAF50;
     color: #fff
 }
 
@@ -170,7 +170,9 @@ a.btn:focus {
     height: 160px;
     top: -80px;
     margin-left: -80px;
-    left: 50%
+    left: 50%;
+    border-radius: 50%;
+    border: 5px solid #fff;
 }
 
 .header .name {
@@ -187,7 +189,7 @@ a.btn:focus {
 }
 
 .header .intro {
-    background: #00a5bb;
+    background: #449d48;
     padding-top: 90px;
     padding-bottom: 60px;
     position: relative;
@@ -200,7 +202,7 @@ a.btn:focus {
 }
 
 .header .contact-info {
-    background: #008fa1;
+    background: #3d8b40;
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 16px
@@ -237,7 +239,7 @@ a.btn:focus {
 }
 
 .page-nav-wrapper {
-    background: #007888;
+    background: #357a38;
     padding-top: 20px;
     padding-bottom: 20px;
     position: absolute;
@@ -252,7 +254,7 @@ a.btn:focus {
     left: 0;
     width: 100%;
     z-index: 100;
-    background: #00BCD4
+    background: #4CAF50
 }
 
 .page-nav-wrapper a {
@@ -329,7 +331,7 @@ a.btn:focus {
 }
 
 .timeline {
-    border-left: 3px solid #00BCD4;
+    border-left: 3px solid #4CAF50;
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
     position: relative;
@@ -359,7 +361,7 @@ a.btn:focus {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     background: #fff;
-    border: 3px solid #00BCD4
+    border: 3px solid #4CAF50
 }
 
 .timeline .item:after {
@@ -374,7 +376,7 @@ a.btn:focus {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background: #00BCD4;
+    background: #4CAF50;
     z-index: 10
 }
 
@@ -408,7 +410,7 @@ a.btn:focus {
 
 .timeline .job-meta .title {
     font-size: 18px;
-    color: #00BCD4;
+    color: #4CAF50;
     max-width: 220px
 }
 
@@ -430,14 +432,14 @@ a.btn:focus {
 
 .education-section .degree {
     font-size: 22px;
-    color: #00BCD4;
+    color: #4CAF50;
     margin-top: 0;
     margin-bottom: 0px
 }
 
 .education-section .degreec {
     font-size: 16px;
-    color: #00BCD4;
+    color: #4CAF50;
     margin-top: 0;
     margin-bottom: 0px
 }
@@ -554,7 +556,7 @@ a.btn:focus {
     width: 36px;
     height: 36px;
     display: inline-block;
-    background: #00BCD4;
+    background: #4CAF50;
     color: #fff;
     border-radius: 50%;
     -moz-background-clip: padding;
@@ -588,7 +590,7 @@ a.btn:focus {
 }
 
 .testimonials-section .carousel-indicators li.active {
-    background-color: #00BCD4;
+    background-color: #4CAF50;
     width: 10px;
     height: 10px;
     margin: 0;
@@ -620,8 +622,8 @@ a.btn:focus {
 }
 
 .portfolio-section .filters .type.active {
-    color: #00BCD4;
-    border-bottom: 2px solid #00BCD4
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50
 }
 
 .portfolio-section .item {
@@ -633,7 +635,7 @@ a.btn:focus {
 }
 
 .portfolio-section .item-inner {
-    background: #00BCD4;
+    background: #4CAF50;
     color: #fff;
     border-radius: 2px;
     -moz-background-clip: padding;
@@ -644,7 +646,7 @@ a.btn:focus {
 }
 
 .portfolio-section .item-inner:hover {
-    background: #00c5de
+    background: #449d48
 }
 
 .portfolio-section .item-inner:hover img {
@@ -715,7 +717,7 @@ a.btn:focus {
 }
 
 .contact-section .service-list .svg-inline--fa {
-    color: #00BCD4;
+    color: #4CAF50;
     margin-right: 5px
 }
 
@@ -739,7 +741,7 @@ a.btn:focus {
 }
 
 .contact-section .social a:hover {
-    color: #00BCD4
+    color: #4CAF50
 }
 
 .footer .container {
@@ -995,7 +997,7 @@ a.btn:focus {
 }
 
 .config-panel #color-options li.theme-1 a {
-    background: #00BCD4
+    background: #4CAF50
 }
 
 .config-panel #color-options li.theme-2 a {
