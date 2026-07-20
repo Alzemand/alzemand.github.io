@@ -631,7 +631,9 @@ a.btn:focus {
 }
 
 .portfolio-section .item .figure {
-    margin-bottom: 0
+    margin-bottom: 0;
+    display: block;
+    width: 100%
 }
 
 .portfolio-section .item-inner {
